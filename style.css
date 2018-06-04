@@ -1,0 +1,102 @@
+.jumbotron{
+    background-color:#FF0000;
+    background-size:cover;
+    color:white;
+    opacity:.3;
+}
+
+.navbar{
+    background-color:bisque;
+}
+
+a{
+  color:steelblue;
+}
+
+body{
+  font-family: 'Gugi', cursive;
+}
+
+footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+
+    .carousel-inner > .item > img {
+        min-width: 100%;
+        height: 500px;
+        display: block;
+    }
+
+    .img-rounded{
+        width:200px;
+        height:200px;
+    }
+
+    .button {
+      display: inline-block;
+      border-radius: 4px;
+      background-color: Aqua;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 28px;
+      padding: 20px;
+      width: 315px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+    }
+
+    .button span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+
+    .button span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+
+    .button:hover span {
+      padding-right: 25px;
+    }
+
+    .button:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+
+    img.filtered-image {
+    animation: sepiaFilter 10s infinite;
+    height:250px
+}
+
+@keyframes sepiaFilter {
+    from {
+        filter: hue-rotate(0deg);
+    }
+    to {
+        filter: hue-rotate(45deg);
+    }
+
+    to {
+        filter: hue-rotate(90deg);
+    }
+    to{
+        filter: hue-rotate(180deg);
+    }
+    to{
+        filter: hue-rotate(270deg);
+    }
+     to{
+        filter: hue-rotate(360deg);
+    }
+}
